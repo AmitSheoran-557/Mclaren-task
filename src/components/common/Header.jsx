@@ -31,7 +31,6 @@ function Header() {
               onClick={() => toggleNavigate(obj.path)} to={obj.path} key={i}> {obj.tittle}
             </Link>
           ))}
-         
         </div>
         <div className="border max-lg:hidden max-h-[31px] max-w-[257px] w-full mt-[27px] border-white rounded-[5px] flex justify-between">
           <input className="bg-transparent outline-none w-full ps-2 placeholder:text-white placeholder:text-[13px] text-[13px] text-white pe-3" type="" placeholder="Search by Keyword" />
@@ -63,7 +62,6 @@ function Header() {
             className="self-end absolute top-4 -translate-y-[2px] -translate-x-1 text-xl"
             onClick={() => setIsOpen(false)}>
             <span className="block relative w-5 h-5">
-            {/* Cross Icon */}
             <span className="absolute block bg-white w-full h-[2px] top-1/2 left-0 transform -translate-y-1/2 rotate-45"></span>
             <span className="absolute block bg-white w-full h-[2px] top-1/2 left-0 transform -translate-y-1/2 -rotate-45"></span>
           </span>
@@ -74,7 +72,6 @@ function Header() {
               {obj.tittle}
               
             </Link>
-            
           ))}
            <div className="border lg:hidden max-h-[31px] max-w-[257px] w-full border-white rounded-[5px] flex justify-between">
             <input className="bg-transparent outline-none w-full ps-2 placeholder:text-white placeholder:text-[13px] text-[13px] text-white pe-3" type="" placeholder="Search by Keyword" />
