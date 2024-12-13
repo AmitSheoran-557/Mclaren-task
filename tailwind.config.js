@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         "blue": "#0046AD",
         "lightBrown": "#525252",
+        "deepBlue": "#023da0",
+        "orange": "#F88011",
+        "gray": "#E3E4E6",
       },
       boxShadow: {
         'customOne': '0px 0px 13.9px 0px rgba(0, 0, 0, 0.1)',

@@ -23,38 +23,40 @@ function Header() {
   }, [isOpen]);
 
   return (
-    <nav className="flex flex-col bg-blue w-full justify-between items-center px-4 relative z-50">
-      <div className="flex justify-between pb-[13px] items- w-full max-w-[1180px]">
-        <div className="hidden pt-[44px] lg:flex justify-between gap-6 items-center">
+    <nav className="flex lg:flex-col bg-blue w-full max-lg:pt-[11px] justify-between items-center px-4 max-sm:px-[18px] relative z-50">
+      <div className="flex justify-between lg:pb-[13px] items- w-full max-w-[1180px]">
+        <div className="hidden pt-[42px] lg:flex justify-between gap-[35px] items-center">
           {NAVBAR_LIST.map((obj, i) => (
-            <a className="text-white opacity-[90%] hover:underline decoration-[1.5px] underline-offset-2 duration-300 ease-linear text-[13px] font-normal"
+            <a className="text-white opacity-[90%] hover:text-orange hover:underline decoration-[1.5px] underline-offset-2 duration-300 ease-linear text-[13px] font-normal"
               onClick={() => toggleNavigate(obj.id)} href={obj.link} key={i}> {obj.tittle}
             </a>
           ))}
+          <div className="border lg:hidden block max-h-[31px] max-w-[257px] w-full mt-[27px] border-white rounded-[5px] justify-between">
+            <input className="bg-transparent outline-none w-full ps-2 placeholder:text-white placeholder:text-[13px] text-[13px] text-white pe-3" type="" placeholder="Search by Keyword" />
+            <div className="py-2 pe-[14px]"> <SEARCH_ICON /></div>
+          </div>
         </div>
-        <div className="border max-h-[31px] mt-[27px] border-white rounded-[5px] flex justify-between">
-          <input className="bg-transparent max-w-[257px] outline-none w-full ps-2 placeholder:text-white placeholder:text-[13px] text-[13px] text-white pe-3" type="" placeholder="Search by Keyword" />
+        <div className="border max-lg:hidden max-h-[31px] max-w-[257px] w-full mt-[27px] border-white rounded-[5px] flex justify-between">
+          <input className="bg-transparent outline-none w-full ps-2 placeholder:text-white placeholder:text-[13px] text-[13px] text-white pe-3" type="" placeholder="Search by Keyword" />
           <div className="py-2 pe-[14px]"> <SEARCH_ICON /></div>
         </div>
-      </div>
-      <div className="hidden lg:block">
-
+        <div className="lg:hidden block md:max-w-24 max-w-[73px] md:max-h-5 max-h-[15px]"> <a href="/"><img src="./assets/image/png/page-logo.png" alt="page-logo" /></a></div>
       </div>
       <button
-        className="lg:hidden flex items-center justify-center w-10 h-10 text-4xl text-white rounded"
+        className="lg:hidden flex items-center justify-center mb-1 -translate-y-1 w-10 h-10 text-[19px] text-white rounded"
         onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? "✖" : "☰"}
       </button>
       {isOpen && (
         <div className="fixed top-0 right-0 h-screen w-full bg-blue text-white p-6 flex flex-col items-center justify-center shadow-lg transition-transform ease-linear duration-300 transform z-50">
           <button
-            className="self-end absolute top-4 text-4xl"
+            className="self-end absolute top-4 -translate-y-[2px] -translate-x-1 text-xl"
             onClick={() => setIsOpen(false)}>
             ✖
           </button>
           {NAVBAR_LIST.map((obj, i) => (
             <a
-              className="text-white hover:underline underline-offset-2 hover:scale-[1.04] duration-300 ease-linear opacity-[90%] text-base font-normal mb-4"
+              className="text-white hover:underline underline-offset-2 hover:text-orange hover:scale-[1.04] duration-300 ease-linear opacity-[90%] md:text-xl text-base font-normal mb-4"
               href={obj.link}
               key={i}
               onClick={() => setIsOpen(false)}>

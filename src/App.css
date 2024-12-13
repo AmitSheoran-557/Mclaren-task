@@ -2,3 +2,10 @@
 * {
   font-family: "Noto Sans", sans-serif;
 }
+.slick-track{
+  display: flex !important;
+  gap: 14px !important;
+}
+.slick-arrow{
+  display: none !important;
+}
