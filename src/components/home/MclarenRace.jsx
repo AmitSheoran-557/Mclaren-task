@@ -8,7 +8,8 @@ const MclarenRace = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        autoplay: true,  
+        autoplaySpeed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [

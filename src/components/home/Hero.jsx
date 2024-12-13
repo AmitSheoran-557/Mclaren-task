@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './../common/Header'
+
 const Hero = () => {
     return (
         <div className='bg-hero-bg bg-cover bg-center xl:pb-[527px] lg:pb-[657px] pb-[378.95px]'>

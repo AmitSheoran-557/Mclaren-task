@@ -38,7 +38,7 @@ function Header() {
         </div>
         <div className="border max-lg:hidden max-h-[31px] max-w-[257px] w-full mt-[27px] border-white rounded-[5px] flex justify-between">
           <input className="bg-transparent outline-none w-full ps-2 placeholder:text-white placeholder:text-[13px] text-[13px] text-white pe-3" type="" placeholder="Search by Keyword" />
-          <div className="py-2 pe-[14px]"> <SEARCH_ICON /></div>
+          <div className="py-2 pe-[14px] "> <span className="cursor-pointer"><SEARCH_ICON /></span></div>
         </div>
         <div className="lg:hidden block md:max-w-24 max-w-[73px] md:max-h-5 max-h-[15px]"> <a href="/"><img src="./assets/image/png/page-logo.png" alt="page-logo" /></a></div>
       </div>

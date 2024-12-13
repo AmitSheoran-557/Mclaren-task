@@ -9,3 +9,12 @@
 .slick-arrow{
   display: none !important;
 }
+.slick-dots li button:before {
+  font-size: 7px !important;
+}
+ 
+@media (min-width:991.99px) {
+  .slick-dots li button:before {
+    font-size: 10px !important;
+  }
+}
