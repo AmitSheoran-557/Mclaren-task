@@ -1,9 +1,9 @@
 export const NAVBAR_LIST = [
-    { tittle: "Menu One", link: "/menu1" },
-    { tittle: "Menu Two", link: "/menu2" },
-    { tittle: "Menu Three", link: "/menu3" },
-    { tittle: "Menu Four", link: "/menu4" },
-    { tittle: "Menu Five", link: "/menu5" },
+    { tittle: "Menu One", path: "about" },
+    { tittle: "Menu Two", path: "blogs" },
+    { tittle: "Menu Three", path: "features" },
+    { tittle: "Menu Four", path: "logos" },
+    { tittle: "Menu Five", path: "hero" },
 ];
 
 export const MCLAREN_RACE_LIST = [
